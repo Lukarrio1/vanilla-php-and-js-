@@ -13,6 +13,23 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand nav-item-link" href="#Home" data-page="Home">ICON GOES HERE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link nav-item-link active" aria-current="page" href="#" data-page="Home">Home</a>
+                    <a class="nav-link nav-item-link" href="#" data-page="Login">Login</a>
+                    <a class="nav-link nav-item-link" href="#" data-page="Register">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="entry"></div>
     <script src="dist/main.js"></script>
 </body>
 
