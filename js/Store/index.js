@@ -1,10 +1,12 @@
+const CURRENT_PAGE_STORAGE_KEY = "CURRENT_PAGE_STORAGE_KEY";
+
 export default class Store {
-  setState(key = "", value = null) {
+  setState(key = CURRENT_PAGE_STORAGE_KEY | "", value = null) {
     if (!value) return;
-    localStorage.setItem(key, JSON.stringify(value));
+    localStorage.setItem(key, value);
   }
-  getState(key) {
+  getState(key = CURRENT_PAGE_STORAGE_KEY) {
     const item = localStorage.getItem(key);
-    return JSON.parse(item);
+    return item;
   }
 }

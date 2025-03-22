@@ -12,7 +12,7 @@ const NotFoundClass = new NotFoundPage();
 const LoginClass = new LoginPage();
 const RegisterClass = new RegisterPage();
 
-// Maping the classes to a key used in the navbar to identify which page the user is requesting
+// Mapping the classes to a key used in the navbar to identify which page the user is requesting
 const pages = {
   Home: HomeClass,
   NotFound: NotFoundClass,
